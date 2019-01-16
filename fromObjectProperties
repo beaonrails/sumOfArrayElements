@@ -1,0 +1,23 @@
+const speciesArray = [ 
+{speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}
+];
+
+
+// create array by accessing numTeeth of all objects in speciesArray
+let array = [];
+for ( let i = 0; i < speciesArray.length; i++) {
+  array.push(speciesArray[i].numTeeth);
+}
+// calculate sum of numTeeth
+const sumOfNumTeeth = array.reduce(function(acc, currValue) {
+   return acc + currValue;          
+});
+console.log(sumOfNumTeeth);
+console.log(array.length);
+// calculate average of numTeeth
+const average = sumOfNumTeeth / array.length;
+console.log(average);
+
+
+
+
